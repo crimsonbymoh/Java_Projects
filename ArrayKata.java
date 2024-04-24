@@ -1,161 +1,176 @@
+
+
 public class ArrayKata{
 
-	public static integer maximum(int[] maximum){
+	public static int maximumIn(int[] numbers){
 
 		int maximumNumber = numbers[0];
 
-		int counter = 0;
-
-		for(int i = 1; i < numbers.length; i++){
+		for(int i = 0; i < numbers.length; i++){
 
 		if(numbers[i] > maximumNumber){
 
 		maximumNumber = numbers[i];
 
+		}
+
+    	     }
 			return maximumNumber;
+	   }
+
+
+	public static int minimumIn(int[] numbers){
+
+		int minimumNumber = numbers[0];
+
+		for(int i = 0; i < numbers.length; i++){
+
+		if(numbers[i] < minimumNumber){
+
+		minimumNumber = numbers[i];
+
+			
 
 		}
 
-    	     }
+    	     }
+			return minimumNumber;
 
 	   }
-	
 
 
 
-
-	public static int sum(int[] numbers) {
+	public static int sumOf(int[] numbers) {
 
 		int sum = 0;
 
-	for (int : number.length) {
+	for(int i = 0; i < numbers.length; i++) {
 
-		sum += n;
+		sum += numbers[i];
+
 		}
-		
+
 		return sum;
 
 	}
 
-	
-	public static integer minimum(int[] minimum){
 
-		int minimumNumber = numbers[0];
 
-		int counter = 0;
 
-		for(int i = 1; i < numbers.length; i++){
+	public static int sumOfEvenNumbers(int[] numbers) {
 
-		if(numbers[i] > minimumNumber){
+	   int sumOfEven = 0;
 
-		minimumNumber = numbers[i];
 
-			counter++;
+	   for(int i = 0; i < numbers.length; i++){
 
-			return minimumNumber;
+	   if ( numbers[i] % 2 == 0) {
 
+	   sumOfEven += numbers[i];
+
+	  	   }
 		}
 
-    	     }
+		return sumOfEven;
 
-	   }
+  	}
 
-	public static integer sumOfEvenNumbers(int[] sumOfEvenNumbers) {
 
-	   int sumOfEvenNumbers = 0;
+	public static int sumOfOddNumbers(int[] numbers) {
 
-	   int sum = 0;
+	   int sumOfOdd = 0;
 
-	   int counter = 0 ;
+	   for(int i = 0; i < numbers.length; i++){
 
-	   for(int i = 1; i < numbers.length; i++){
+	   if( numbers[i] % 2 != 0 ) {
 
-	   if( number[counter] % sumOfEvenNumbers == 0) {
+	   sumOfOdd += numbers[i];
 
-	   sum +=  number.length;
 
-	   counter++;
-
-	   return sum;
-
-	
 	  }
 	}
-  
+		   return sumOfOdd;
   }
 
-	
-	public static integer sumOfOddNumbers(int[] sumOfoddNumbers) {
+	public static int evenNumbersIn(int[] numbers) {
 
-	   int sumOfOddNumbers = 0;
+			int counter = 0;
 
-	   int sum = 0;
+			int evenNumbers = numbers[0];
 
-	   int counter = 0 ;
+		for (int i =  0; i < numbers.length; i++ ) {
 
-	   for(int i = 1; i < numbers.length; i++){
+				counter++;
 
-	   if( number[counter] % sumOfOddNumbers == 1) {
+			if ( numbers[i] %  2 == 0) {
 
-	   sum +=  number.length;
+				evenNumbers = numbers[i];
 
-	   counter++;
+				}
 
-	   return sum;
-
-	
-	  }
+			 
+		}
+			return evenNumbers ; 
 	}
-  
-  }
-	    
-	public static integer maximumAndMinimum(int[] number) {
 
-	int maximumNumber = 0;
+	public static int oddNumbersIn(int[] numbers) {
 
-	int minimumNumber = 0;
+			int counter = 0;
 
-	for (counter = 0; counter < numbers.length; counter++) {
+			int oddNumbers = numbers[0];
 
-		if (number[counter] > maximumNumber){
+		for (int i = 0; i <numbers.length; i++ ) {
 
-			maximumNumber = number[counter];
-		}
+			if ( numbers[i] %  2 != 0) {
 
-		if (number[counter] < minimumNumber){
-
-		 minimumNumber = number[counter];
-	
-		}
-
-		int maximumAndMinimum = (maximum,ninimum);
-
-		return maximumandminimum; 
+				
+			}
 
 		}
-
+			return oddNumbers ; 
 	}
 
 
-	public static integer noOfOddNumber(int[] number) {
 
-	int oddNumber = 0;
+	public static int numOfOddNumbersIn(int[] numbers) {
 
-	int counter = o;
+			int counter = 0;
 
-	for(counter; counter < numbers.length; counter++) {
+			int numOfOddNumbersIn = 0;
 
-	if (number[counter] % number==1);
+		for (int i = 0; i < numbers.length; i++ ) {
+
+			if ( numbers[i] %  2 != 0) {
+
+				counter++;
+
+				}
+				
+			}
+		return counter ;
+	}
+
 	
-		return;
 
+	public static int numOfEvenNumbersIn(int[] numbers) {
+
+			int counter = 0;
+
+			int numOfEvenNumbersIn = 0;
+
+		for (int i = 0; i < numbers.length; i++ ) {
+
+			if ( numbers[i] %  2 == 0) {
+
+				counter++;
+
+				}
+				
+			}
+		return counter ;
 		}
-
-
-
-   }
-
-
 
 
 }
+
+
