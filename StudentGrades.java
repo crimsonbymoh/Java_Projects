@@ -85,24 +85,24 @@ public class StudentGrades{
 
         System.out.print("Student " + (j + 1));
 
-			double total = 0;
+			double totalScore = 0;
 
-			double average = 0;
+			double averageScore = 0;
 
-	for(int k = 0; k < numberOfSubjects; k++){
+	for(int counter = 0; counter < numberOfSubjects; counter++){
 		
-	System.out.printf("\t  " + scores[j][k]);
+	System.out.printf("\t  " + scores[j][counter]);
 
-			total += scores[j][k];
+			totalScore += scores[j][counter];
 
-			average = total / numberOfSubjects;
+			averageScore = totalScore / numberOfSubjects;
 
 
 		}
             	
-		System.out.printf("	%.2f" , total);
+		System.out.printf("	%.2f" , totalScore);
 
-		System.out.printf("	%.2f" , average);
+		System.out.printf("	%.2f" , averageScore);
  
 		System.out.println();
 
