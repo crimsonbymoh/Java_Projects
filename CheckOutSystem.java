@@ -51,7 +51,7 @@ import java.util.ArrayList;
 		}while(!userResponse.equals("no"));
 			
 		System.out.println("What is your name:?");
-		String cashierName = input.nextc();
+		String cashierName = input.next();
 		System.out.println("How much discount will he get: ");
 		int discountGiven = input.nextInt();
 		
@@ -61,7 +61,7 @@ import java.util.ArrayList;
 			System.out.println("TEL: 03293828343 ");
 			System.out.println(date);
 			System.out.println("Cashier:  " + cashierName);
-			System.out.println("CustomerName:  " + customerName);
+			System.out.println("Customer's Name:  " + customerName);
 
 		System.out.println("=================================");
 		System.out.println("ITEM \t QTY \t PRICE \t  TOTAL");
@@ -85,7 +85,7 @@ System.out.println("--------------------------------------");
 System.out.printf("	BillTotal:     %.2f%n", BillTotal); 
 
 System.out.println(" ======================================");
-System.out.println("THIS IS NOT AN RECEIPT KINDLY PAY " + BillTotal);
+System.out.println("THIS IS NOT A RECEIPT, KINDLY PAY " + BillTotal);
 System.out.println("=========================================");
 	
 System.out.println("How much did the customer give to you? ");
@@ -97,7 +97,7 @@ double AmountPaid = input.nextDouble();
 			System.out.println("TEL: 03293828343 ");
 			System.out.println(date);
 			System.out.println("Cashier:  " + cashierName);
-			System.out.println("CustomerName:  " + customerName);
+			System.out.println("Customer's Name:  " + customerName);
 
 	System.out.println("=================================");		System.out.println("ITEM \t QTY \t PRICE \t  TOTAL");
 	System.out.println("----------------------------------");
@@ -118,7 +118,7 @@ System.out.printf("	BillTotal:    %.2f%n",   BillTotal);
 System.out.printf("      AmountPaid:    %.2f%n ",  AmountPaid);
 System.out.printf("	 Balance:     %.2f%n",   Balance);
 System.out.println("===========================================");
-       System.out.println("THANKS YOU FOR YOUR PATRONAGE ");
+       System.out.println("THANK YOU FOR YOUR PATRONAGE ");
 System.out.println("========================================");
 
 	}

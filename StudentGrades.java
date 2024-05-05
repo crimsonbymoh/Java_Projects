@@ -89,11 +89,11 @@ public class StudentGrades{
 
 			double average = 0;
 
-	for(int k = 0; k < numberOfSubjects; k++){
+	for(int counter = 0; counter < numberOfSubjects; counter++){
 		
-	System.out.printf("\t  " + scores[j][k]);
+	System.out.printf("\t  " + scores[j][counter]);
 
-			total += scores[j][k];
+			total += scores[j][counter];
 
 			average = total / numberOfSubjects;
 
